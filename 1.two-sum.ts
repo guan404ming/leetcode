@@ -19,18 +19,16 @@ function twoSum(nums: number[], target: number): number[] {
 }
 // @lc code=end
 
-/* Better Solution
-function twoSum(nums: number[], target: number): number[] {
-    const numMap = new Map();
+function BetterTwoSum(nums: number[], target: number): number[] {
+  const numMap = new Map();
 
-    for (let i = 0; i < nums.length; i++) {
-        const num = nums[i];
-        const difference = target - num;
+  for (let i = 0; i < nums.length; i++) {
+    const num = nums[i];
+    const difference = target - num;
 
-        if (numMap.has(difference)) return [numMap.get(difference), i];
-        else numMap.set(num, i);
-    }
-    
-    return []
-};
-*/
+    if (numMap.has(difference)) return [numMap.get(difference), i];
+    else numMap.set(num, i);
+  }
+
+  return [];
+}

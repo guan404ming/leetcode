@@ -46,8 +46,7 @@ function romanToInt(s: string): number {
 }
 // @lc code=end
 
-/* Better Solution
-function romanToInt(s: string): number {
+function BetterRomanToInt(s: string): number {
   const symbolToValue: { [key: string]: number } = {
         I: 1,
         V: 5,
@@ -71,4 +70,3 @@ function romanToInt(s: string): number {
 
     return total;
 }
-*/

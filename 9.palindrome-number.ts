@@ -10,18 +10,16 @@ function isPalindrome(x: number): boolean {
 }
 // @lc code=end
 
-/* Better Solution
-function isPalindrome(x: number): boolean {
-    let number = x.toString()
+function BetterIsPalindrome(x: number): boolean {
+  let number = x.toString();
 
-    for (let i = 0; i < number.length; ++i) {
-        if (number[i] === number[number.length - i - 1]) {
-            continue
-        }
-
-        return false 
+  for (let i = 0; i < number.length; ++i) {
+    if (number[i] === number[number.length - i - 1]) {
+      continue;
     }
 
-    return true 
-};
-*/
+    return false;
+  }
+
+  return true;
+}
